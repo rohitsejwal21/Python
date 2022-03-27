@@ -1,0 +1,10 @@
+/*
+Find all posts with a keyword that contains 'nba' substring.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+facebook_posts[facebook_posts['post_keywords'].str.contains('nba')]
