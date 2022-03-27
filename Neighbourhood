@@ -1,0 +1,11 @@
+/*
+Find all neighborhoods present in this dataset
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+airbnb_search_details.head()
+airbnb_search_details.drop_duplicates(['neighbourhood'])[['neighbourhood']]
