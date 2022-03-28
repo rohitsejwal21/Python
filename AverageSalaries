@@ -1,0 +1,13 @@
+/*
+Find the average number of searches made by each user and present the result with their corresponding user id.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+airbnb_searches.head()
+
+airbnb_searches.groupby(['id_user'])['n_searches'].mean().to_frame().reset_index()
