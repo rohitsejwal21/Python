@@ -1,0 +1,15 @@
+/*
+Find all Danish athletes who won a medal.
+Output unique names only.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+olympics_athletes_events.head()
+
+danish = olympics_athletes_events[(olympics_athletes_events['team'] == 'Denmark') & (olympics_athletes_events['medal'].notnull())]
+result = danish[['name']].drop_duplicates()
