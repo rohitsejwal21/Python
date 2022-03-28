@@ -1,0 +1,15 @@
+/*
+Find the number of workers by department.
+Output the department name along with the corresponding number of workers.
+Sort records based on the number of workers in descending order.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+worker.head()
+
+worker.groupby(['department']).size().to_frame('size').reset_index().sort_values(['size'], ascending= False).rename(index=str, columns={"department": "department", "size": "No_Of_Workers"})
