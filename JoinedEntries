@@ -7,7 +7,6 @@ CODE;
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 airbnb_contacts.head()
 
 pd.merge(airbnb_searches, airbnb_contacts, how='left', left_on=['id_user'], right_on=['id_guest']).head(5)
