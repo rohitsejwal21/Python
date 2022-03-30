@@ -9,7 +9,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 olympics_athletes_events.head()
 
 olympics_athletes_events[(olympics_athletes_events['season'] == 'Winter') &(olympics_athletes_events['height'].between(180,210))][['event']].drop_duplicates()
