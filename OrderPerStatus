@@ -10,7 +10,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 uber_orders.head()
 
 uber_orders.groupby(['service_name','status_of_order'])['number_of_orders'].sum().reset_index(name='total_orders')
