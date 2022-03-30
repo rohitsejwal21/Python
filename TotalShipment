@@ -10,7 +10,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 amazon_shipment.head()
 
 amazon_shipment['total_weight'] = amazon_shipment['weight'].groupby(amazon_shipment['shipment_id']).transform('sum')
