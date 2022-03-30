@@ -9,7 +9,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 sf_restaurant_health_violations.head()
 
 score = sf_restaurant_health_violations[sf_restaurant_health_violations['inspection_score'].notnull()]
