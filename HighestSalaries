@@ -7,7 +7,5 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-worker.head()
-
 distinct_salary = worker[['salary']].drop_duplicates()
 result = distinct_salary.nlargest(5,'salary')[['salary']]
