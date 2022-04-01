@@ -1,0 +1,15 @@
+/*
+Find all uses that have more than 3 friends
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+df = google_friends_network[['user_id'
+                            ]].append(google_friends_network[['friend_id'
+        ]].rename(columns={'friend_id': 'user_id'}), ignore_index=True)
+grouped = df.groupby(['user_id']).filter(lambda x: len(x) \
+        > 3).groupby('user_id').size().to_frame().reset_index()
+result = grouped[['user_id']]
