@@ -7,7 +7,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 worker.head()
 
 distinct_salary = worker[['salary']].drop_duplicates()
