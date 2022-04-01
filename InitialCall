@@ -1,0 +1,17 @@
+/*
+Initial Call Duration
+Redfin helps clients to find agents. Each client will have a unique request_id and each request_id has several calls. 
+For each request_id, the first call is an “initial call” and all the following calls are “update calls”. 
+What's the average call duration for all initial calls?
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+redfin_call_tracking.head()
+
+first_call = redfin_call_tracking.groupby(['request_id'])['id'].min()
+result = redfin_call_tracking[redfin_call_tracking['id'].isin(first_call)]['call_duration'].mean()
