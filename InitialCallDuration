@@ -10,8 +10,5 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
-redfin_call_tracking.head()
-
 first_call = redfin_call_tracking.groupby(['request_id'])['id'].min()
 result = redfin_call_tracking[redfin_call_tracking['id'].isin(first_call)]['call_duration'].mean()
