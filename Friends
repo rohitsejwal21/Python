@@ -4,7 +4,6 @@ Find all uses that have more than 3 friends
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 df = google_friends_network[['user_id'
