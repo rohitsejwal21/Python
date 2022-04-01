@@ -9,8 +9,5 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
-cvs_claims.head()
-
 filtered_claims = cvs_claims[(cvs_claims['date_submitted'].dt.to_period('M') == '2021-12') & (cvs_claims['date_accepted'].isna()) & (cvs_claims['date_rejected'].isna())]
 result = filtered_claims.shape[0]
