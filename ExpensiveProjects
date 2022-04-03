@@ -1,0 +1,20 @@
+/*
+Expensive Projects
+Given a list of projects and employees mapped to each project, calculate by the amount of project budget allocated to each employee . 
+The output should include the project title and the project budget per employee rounded to the closest integer. 
+Order your list by projects with the highest budget per employee first.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+ms_projects.head()
+
+df=pd.merge(ms_projects, ms_emp_projects, how = 'inner',left_on = ['id'], right_on=['project_id'])
+df1=df.groupby(['title','budget'])['emp_id'].size().reset_index()
+df1['budget_emp_ratio'] = (df1['budget']/df1['emp_id']).round(0)
+df2=df1.sort_values(by='budget_emp_ratio',ascending=False)
+result = df2[["title","budget_emp_ratio"]]
