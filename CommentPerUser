@@ -1,0 +1,20 @@
+/*
+Number of Comments Per User in Past 30 days
+Return the total number of comments received for each user in the last 30 days. 
+Don't output users who haven't received any comment in the defined time period. 
+Assume today is 2020-02-10.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+fb_comments_count.head()
+
+from datetime import timedelta
+
+result = fb_comments_count[(fb_comments_count['created_at'] >= pd.to_datetime('2020-02-10') - timedelta(days=30)) & (
+        fb_comments_count['created_at'] <= pd.to_datetime('2020-02-10'))].groupby('user_id')[
+'number_of_comments'].sum().reset_index()
