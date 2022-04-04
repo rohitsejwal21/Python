@@ -10,7 +10,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 ms_projects.head()
 
 df=pd.merge(ms_projects, ms_emp_projects, how = 'inner',left_on = ['id'], right_on=['project_id'])
