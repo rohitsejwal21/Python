@@ -9,7 +9,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 airbnb_search_details.head()
 
 shared_room = airbnb_search_details[(airbnb_search_details['room_type'] == 'Shared room')]
