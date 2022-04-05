@@ -6,7 +6,6 @@ Sort your results by listing cities with the highest ratios first.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 airbnb_search_details.head()
