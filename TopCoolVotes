@@ -6,7 +6,6 @@ Output the business name along with the review text with the highest numbef of '
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 yelp_reviews.head()
