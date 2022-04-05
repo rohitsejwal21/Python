@@ -1,12 +1,10 @@
 /*
-Share of Active Users
 Output share of US users that are active. 
 Active users are the ones with an "open" status in the table.
 */
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 fb_active_users.head()
