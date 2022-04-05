@@ -8,7 +8,6 @@ Order your list by employee ID in ascending order.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 ms_employee_salary.head()
