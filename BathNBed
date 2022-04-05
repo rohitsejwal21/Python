@@ -6,7 +6,6 @@ Output the result along with the city name and the property type.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 airbnb_search_details.head()
