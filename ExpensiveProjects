@@ -7,7 +7,6 @@ Order your list by projects with the highest budget per employee first.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 ms_projects.head()
