@@ -10,6 +10,4 @@ CODE:
 
 import pandas as pd
 
-ms_employee_salary.head()
-
 result = ms_employee_salary.groupby(['id','first_name','last_name','department_id'])['salary'].max().reset_index().sort_values('id')
