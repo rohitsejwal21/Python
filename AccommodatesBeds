@@ -8,8 +8,6 @@ CODE:
 
 import pandas as pd
 
-airbnb_search_details.head()
-
 shared_room = airbnb_search_details[(airbnb_search_details['room_type'] == 'Shared room')]
 shared_room['avg_crowdness_ratio'] = shared_room['accommodates']/shared_room['beds']
 result = shared_room.groupby(['city'])['avg_crowdness_ratio'].mean().to_frame().reset_index().sort_values(['avg_crowdness_ratio'], ascending = False)
