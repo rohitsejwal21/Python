@@ -9,8 +9,6 @@ CODE:
 
 import pandas as pd
 
-ms_projects.head()
-
 df=pd.merge(ms_projects, ms_emp_projects, how = 'inner',left_on = ['id'], right_on=['project_id'])
 df1=df.groupby(['title','budget'])['emp_id'].size().reset_index()
 df1['budget_emp_ratio'] = (df1['budget']/df1['emp_id']).round(0)
