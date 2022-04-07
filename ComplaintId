@@ -4,7 +4,6 @@ Find the complaint id for the processed complaints of type 1.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 facebook_complaints.head()
