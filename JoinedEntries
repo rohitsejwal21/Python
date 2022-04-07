@@ -4,7 +4,6 @@ List first 5 entries of a joined contacts and searches tables
 
 CODE;
 
-# Import your libraries
 import pandas as pd
 
 airbnb_contacts.head()
