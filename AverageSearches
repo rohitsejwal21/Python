@@ -4,7 +4,6 @@ Find the average number of searches made by each user and present the result wit
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 airbnb_searches.head()
