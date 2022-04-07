@@ -5,10 +5,8 @@ Find the activity date and the pe_description of facilities with the name 'STREE
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
-# Start writing code
 los_angeles_restaurant_health_inspections.head()
 
 result = los_angeles_restaurant_health_inspections[(los_angeles_restaurant_health_inspections['facility_name']=='STREET CHURROS') &          (los_angeles_restaurant_health_inspections['score'] < 95)][['activity_date','pe_description']]
