@@ -5,7 +5,6 @@ Output unique names only.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 olympics_athletes_events.head()
