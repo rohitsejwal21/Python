@@ -7,7 +7,6 @@ What's the average call duration for all initial calls?
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 first_call = redfin_call_tracking.groupby(['request_id'])['id'].min()
