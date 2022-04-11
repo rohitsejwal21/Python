@@ -1,0 +1,20 @@
+/*
+Gender With Generous Reviews
+Write a query to find which gender gives a higher average review score when writing reviews as guests. 
+Use the `from_type` column to identify guest reviews.
+Output the gender and their average review score.
+*/
+
+CODE:
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+customers.head()
+
+merge = pd.merge(customers, orders, left_on="id", right_on="cust_id")
+cust = ["Jill", "Eva"]
+result = merge[merge["first_name"].isin(cust)][
+    ["first_name", "order_date", "order_details", "total_order_cost"]
+]
