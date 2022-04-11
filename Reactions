@@ -7,7 +7,6 @@ CODE:
 # Import your libraries
 import pandas as pd
 
-# Start writing code
 facebook_reactions.head()
 
 heart = facebook_reactions[facebook_reactions['reaction'] == 'heart'][['post_id']]
