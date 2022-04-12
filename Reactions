@@ -4,7 +4,6 @@ Find all posts which were reacted to with a heart
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 facebook_reactions.head()
