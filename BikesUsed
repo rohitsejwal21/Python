@@ -7,7 +7,6 @@ Order the results by bikes that were most recently used.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 dc_bikeshare_q1_2012.head()
