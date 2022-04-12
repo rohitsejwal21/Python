@@ -8,7 +8,6 @@ Order records based on the customer id in ascending order.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 customers.head()
