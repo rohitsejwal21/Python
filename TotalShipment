@@ -7,7 +7,6 @@ One shipment can have multiple rows.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 amazon_shipment.head()
