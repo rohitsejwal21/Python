@@ -7,7 +7,6 @@ Output the gender and their average review score.
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 customers.head()
