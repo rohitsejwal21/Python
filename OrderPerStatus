@@ -7,7 +7,6 @@ Your output should include the service name, status of the order, and the number
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 uber_orders.head()
