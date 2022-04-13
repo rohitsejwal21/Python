@@ -4,7 +4,6 @@ Find the five highest salaries
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 distinct_salary = worker[['salary']].drop_duplicates()
