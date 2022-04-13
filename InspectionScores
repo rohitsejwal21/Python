@@ -6,7 +6,6 @@ Try to come up with your own precise median calculation. In Postgres there is `p
 
 CODE:
 
-# Import your libraries
 import pandas as pd
 
 sf_restaurant_health_violations.head()
