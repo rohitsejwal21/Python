@@ -6,6 +6,4 @@ Output the business name along with the review text with the highest numbef of '
 
 CODE:
 
-import pandas as pd
-
 result = yelp_reviews[yelp_reviews['cool'] ==yelp_reviews['cool'].max()][['business_name','review_text']]
