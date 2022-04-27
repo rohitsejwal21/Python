@@ -1,5 +1,5 @@
 /*
-Find all uses that have more than 3 friends
+Find all users that have more than 3 friends
 */
 
 CODE:
