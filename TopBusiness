@@ -10,5 +10,4 @@ CODE:
 import pandas as pd
 
 yelp_business['rnk'] = yelp_business['review_count'].rank(ascending=False) 
-
 yelp_business[yelp_business['rnk']<=5][['name', 'review_count']].sort_values(by='review_count', ascending=False)
