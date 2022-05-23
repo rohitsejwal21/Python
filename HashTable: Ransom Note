@@ -18,6 +18,7 @@ import os
 import random
 import re
 import sys
+from collections import Counter
 
 #
 # Complete the 'checkMagazine' function below.
@@ -28,18 +29,12 @@ import sys
 #
 
 def checkMagazine(magazine, note):
-    if len(magazine) >= len(note):
-        for word in range(0, len(note)):
-            if note[word] in magazine:
-                del magazine[magazine.index(note[word])]
-            else:
-                print('No')
-                return
+    m = Counter(magazine)
+    n = Counter(note)
+    if (m & n) == n:
         print('Yes')
-        return
     else:
         print('No')
-        return
 
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
